@@ -1,5 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "ab33a308-b906-41e7-85cc-ef2732cd0d2c", // The ID of this integration.
+    region: "eu-de", // The region your integration is hosted in.
+    serviceInstanceID: "1faea74e-a8eb-4026-a587-a433a36ac271", // The ID of your service instance.
+    onLoad: function(instance) { instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
@@ -29,6 +43,7 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <img src="logo">
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
